@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport"content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
     <title>MJ's Portfolio</title>
 
     <!--[if lt IE 9]>
@@ -35,10 +37,10 @@
                 <div class="header-wrap">
                     <nav class="nav">
                         <ul class="gnb">
-                            <li><a href="#">PORTFOLIO</a></li>
-                            <li><a href="#">ABOUTME</a></li>
-                            <li><a href="#">EXPERIENCES</a></li>
-                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#aboutme">ABOUTME</a></li>
+                            <li><a href="#experiences">EXPERIENCES</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -69,7 +71,7 @@
 
             <div class="line-v"></div>
 
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="container clearfix">
                     <div class="left">
 
@@ -100,8 +102,8 @@
 
                             <div class="link">
                                 <ul class="link-wrap clearfix">
-                                    <li><a href="https://www.osulloc.com/" target="_blank">Original <i
-                                                class="fas fa-external-link-alt"></i></a></li>
+                                    <li><a href="https://www.osulloc.com/" target="_blank">Original </a><i
+                                                class="fas fa-external-link-alt"></i></li>
                                     <li><a href="https://fedevmj.github.io/OSULOC/" target="_blank">Preview <i
                                                 class="far fa-caret-square-right"></i></a></li>
                                     <li><a href="#" target="_blank">Responsive <i class="fas fa-tablet-alt"></i></a>
@@ -446,6 +448,7 @@
             </section>
 
             <div class="line-v"></div>
+            <div id="aboutme"></div>
 
             <section class="aboutme">
                 <div class="container">
@@ -525,6 +528,7 @@
                                 <h5>Bootstrap</h5>
                                 <h5>Flex</h5>
                                 <li></li>
+                                <li></li>
                                 <h5>PHP</h5>
                                 <h5>mariaDB</h5>
                                 <h5>SCSS</h5>
@@ -572,7 +576,7 @@
                 </div>
             </section>
 
-            <!-- <div class="line-v"></div> -->
+            <div id="experiences"></div>
 
             <section class="experiences">
                 <div class="container">
@@ -634,7 +638,7 @@
         <!-- 하단 -->
         <footer class="footer">
             <div class="container">
-                <div class="contact-wrap clearfix">
+                <div class="contact-wrap clearfix" id="contact">
                     <div class="intro-title">
                         <span class="orange"></span>
                         <h2>CONTACT</h2>

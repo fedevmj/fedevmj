@@ -1,5 +1,11 @@
 @charset 'utf-8';
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600&display=swap');
+@font-face {
+    font-family: 'MinSans-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -29,7 +35,8 @@ html {
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'MinSans-Light', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
     font-size: inherit;
     font-weight: 400;
     color: #000;
@@ -59,9 +66,9 @@ body {
     margin: 0 auto;
 }
 
-a:hover {
+/* a:hover {
     color: #de665a;
-}
+} */
 
 /* 전체 레이아웃 */
 .wrap {
@@ -75,9 +82,14 @@ a:hover {
     top: 0;
     display: block;
     width: 100%;
-    height: 60px;
+    height: 100px;
+    background-color: transparent;
     /* background-color: #feffff; */
     z-index: 9;
+}
+
+.header-active{
+    background-color: #fff;
 }
 
 .header-wrap {
@@ -110,12 +122,16 @@ a:hover {
     font-size: 18px;
     color: #000;
     font-weight: 400;
+    /* background-color: transparent;
+    transition: background-color 0.3s; */
     transition: color 0.3s;
 }
 
 .gnb li a:hover {
-    color: #6d6d6d;
+    /* color: #6d6d6d; */
     color: #de665a;
+    /* color: #ffd45e; */
+    /* background-color: #ffd45e; */
 }
 
 /* 메인 */
@@ -328,6 +344,19 @@ a:hover {
     margin: 0 10px;
 }
 
+.link-wrap a{
+    position: relative;
+    display: inline-block;
+    /* background-color: transparent; */
+    transition: color 0.3s;
+}
+
+.link-wrap a:hover{
+    /* background-color: #ffd45e; */
+    color: #de665a;
+}
+
+
 /* .link-wrap a {
     position: relative;
     font-weight: bold;
@@ -409,7 +438,7 @@ a:hover {
     width: 1150px;
     height: 300px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .intro-title {
@@ -461,10 +490,10 @@ a:hover {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 1150px;
+    width: 1300px;
     height: 400px;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -599,16 +628,17 @@ a:hover {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 1150px;
+    width: 1400px;
 }
 
 .vision-wrap {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 1150px;
+    width: 1400px;
     margin: 0 auto;
-    margin: 80px 0;
+    margin: 150px 0;
+    margin-bottom: 80px;
     text-align: center;
 }
 
@@ -641,7 +671,7 @@ a:hover {
 
 .lineForRoadmap {
     position: absolute;
-    right: 170px;
+    right: 255px;
     top: 20px;
     width: 20%;
     height: 2px;
@@ -659,6 +689,7 @@ a:hover {
     position: relative;
     display: block;
     height: 100%;
+    padding-top: 50px;
 }
 
 .experiences-title {
@@ -792,10 +823,14 @@ a:hover {
     height: 500px; */
 }
 
+.footer .container{
+    width: 1400px;
+}
+
 .contact-wrap{
     position: relative;
     display: block;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .contact-wrap > .intro-title{
@@ -811,7 +846,7 @@ a:hover {
 .contact-left{
     position: relative;
     display: block;
-    width: 45%;
+    width: 50%;
     float: left;
     padding: 50px;
     text-align: center;
@@ -858,7 +893,7 @@ a:hover {
 .contact-right{
     position: relative;
     display: block;
-    width: 35%;
+    width: 30%;
     float: right;
 }
 
