@@ -1,0 +1,868 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline-style: none; */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: inherit;
+    font-weight: 400;
+    color: #000;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    margin-top: 60px;
+    background-color: #f3f3f4;
+}
+
+.clearfix::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+/* 공통요소 */
+
+.container {
+    position: relative;
+    display: block;
+    /* width: 1150px; */
+    width: 1400px;
+    margin: 0 auto;
+}
+
+a:hover {
+    color: #de665a;
+}
+
+/* 전체 레이아웃 */
+.wrap {
+    position: relative;
+    display: block;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 60px;
+    /* background-color: #feffff; */
+    z-index: 9;
+}
+
+.header-wrap {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.nav {
+    position: relative;
+    display: block;
+    height: 60px;
+}
+
+.gnb {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.gnb li {
+    position: relative;
+    display: block;
+}
+
+.gnb li a {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.gnb li a:hover {
+    color: #6d6d6d;
+    color: #de665a;
+}
+
+/* 메인 */
+
+.main {
+    position: relative;
+    display: block;
+}
+
+/* 비주얼 */
+
+.visual {
+    position: relative;
+    display: block;
+}
+
+.visual>.container {
+    width: 1200px;
+}
+
+.visual-wrap {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.visual-box {
+    position: relative;
+    display: block;
+}
+
+.visual .img-box {
+    position: relative;
+    display: block;
+    height: 580px;
+    float: left;
+}
+
+.visual .img-box img {
+    position: relative;
+    display: block;
+}
+
+.visual .text-box {
+    position: relative;
+    display: block;
+    height: 580px;
+    float: right;
+    text-align: center;
+}
+
+.visual .text-box h1 {
+    position: relative;
+    display: block;
+    width: calc(1150px - 550px);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 3px;
+    float: right;
+    margin-top: 180px;
+}
+
+/* 타이핑 효과 */
+.blink {
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cursor {
+    0% {
+        border-right: 2px solid #fff
+    }
+
+    50% {
+        border-right: 2px solid #000
+    }
+
+    100% {
+        border-right: 2px solid #fff
+    }
+}
+
+.seemywork {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+    display: block;
+}
+
+.seemywork h5 {
+    position: relative;
+    display: block;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.seemywork p {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 2px;
+}
+
+.line-v {
+    position: relative;
+    display: block;
+    width: 1400px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #ebebeb;
+}
+
+/* 포트폴리오 */
+
+.portfolio {
+    position: relative;
+    display: block;
+}
+
+.left {
+    position: relative;
+    display: block;
+    width: 50%;
+    float: left;
+    border-right: 1px solid #ebebeb;
+}
+
+.description {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.description h2 {
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.description span,
+.description p {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.skills {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 380px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.skill-box {
+    position: relative;
+    display: block;
+}
+
+.skill-box i {
+    font-size: 40px;
+}
+
+.skill-box span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.site {
+    position: relative;
+    display: block;
+    margin-top: 50px;
+}
+
+.site img {
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.site img:hover {
+    filter: grayscale(0%);
+}
+
+.link {
+    position: relative;
+    display: block;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.link-wrap {
+    text-align: center;
+    margin-left: 60px;
+}
+
+.link-wrap li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 10px;
+}
+
+/* .link-wrap a {
+    position: relative;
+    font-weight: bold;
+  }
+  .link-wrap a::before {
+    content: "";
+    background-color: orange;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 5px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  .link-wrap a:hover::before {
+    left: -5px;
+    bottom: 0;
+    height: 100%;
+    width: calc(100% + 10px);
+  } */
+
+.line-h {
+    position: absolute;
+    left: 100%;
+    transform: translateX(-50%);
+    top: 57%;
+    display: block;
+    width: 315px;
+    height: 1px;
+    background-color: #ebebeb;
+}
+
+
+.right {
+    position: relative;
+    display: block;
+    width: 50%;
+    float: right;
+    /* margin-top: 150px; */
+}
+
+/* 어바웃미 */
+.aboutme {
+    position: relative;
+    display: block;
+}
+
+/* 
+.quote{
+    position: relative;
+    display: block;
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 200px 0;
+}
+
+.quote img{
+    width: 30px;
+    height: 30px;
+}
+
+.quote p{
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.quote span{
+    font-size: 20px;
+    font-weight: 300;
+} */
+
+.intro-wrap {
+    position: relative;
+    display: block;
+    width: 1150px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.intro-title {
+    position: relative;
+    display: block;
+    float: left;
+    width: 25%;
+    margin-top: 80px;
+    /* margin-left: 80px; */
+    text-align: right;
+}
+
+.intro-title h2 {
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.intro-desc {
+    position: relative;
+    display: block;
+    float: right;
+    width: 75%;
+    padding-left: 50px;
+    padding-top: 80px;
+    padding-right: 50px;
+}
+
+.intro-desc h3 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.orange {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: orange;
+    margin: 20px 0;
+}
+
+.intro-desc p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.35;
+}
+
+.record-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.record-wrap li {
+    position: relative;
+    display: block;
+    height: 30px;
+    line-height: 1.7;
+}
+
+.record-wrap .row2 {
+    height: 60px;
+}
+
+.record-wrap .row3 {
+    height: 150px;
+}
+
+.record-wrap span {
+    font-size: 12px;
+}
+
+.record-wrap .large {
+    font-size: 13px;
+}
+
+.record-wrap h5 {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    border-radius: 20px;
+    font-weight: 400;
+    color: #000;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.record-wrap h5:nth-child(1) {
+    background-color: #f9d9c4;
+}
+
+.record-wrap h5:nth-child(2) {
+    background-color: #fde8c3;
+}
+
+.record-wrap h5:nth-child(3) {
+    background-color: #d6ead8;
+}
+
+.record-wrap h5:nth-child(4) {
+    background-color: #cde1ec;
+}
+
+.record-wrap h5:nth-child(5) {
+    background-color: #e4dbeb;
+}
+
+.record-wrap h5:nth-child(6) {
+    background-color: #f3dce5;
+}
+
+.record-wrap h5:nth-child(7) {
+    background-color: #eadbd5;
+}
+
+.record-wrap h5:nth-child(8) {
+    background-color: #ffded8;
+}
+
+.record-wrap h5:nth-child(10) {
+    background-color: #efeeed;
+}
+
+.record-wrap h5:nth-child(11) {
+    background-color: #ebdbd5;
+}
+
+.record-wrap h5:nth-child(12) {
+    background-color: #fde7c3;
+}
+
+.record-wrap h5:nth-child(13) {
+    background-color: #cde2ec;
+}
+
+.record-left {
+    position: relative;
+    display: block;
+    width: 32%;
+    height: 100%;
+}
+
+.record-middle {
+    position: relative;
+    display: block;
+    width: 32%;
+    height: 100%;
+}
+
+.record-right {
+    position: relative;
+    display: block;
+    width: 32%;
+    height: 100%;
+}
+
+.record-title {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.inner-left {
+    position: relative;
+    display: block;
+    width: 30%;
+    float: left;
+    text-align: right;
+}
+
+.inner-right {
+    position: relative;
+    display: block;
+    width: 70%;
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.vision {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+}
+
+.vision-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    margin: 0 auto;
+    margin: 80px 0;
+    text-align: center;
+}
+
+.record-title-side {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.possibility,
+.roadmap {
+    position: relative;
+    display: block;
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.lineForPossiblity {
+    position: absolute;
+    left: 170px;
+    top: 20px;
+    width: 20%;
+    height: 2px;
+    background-color: #000;
+}
+
+.lineForRoadmap {
+    position: absolute;
+    right: 170px;
+    top: 20px;
+    width: 20%;
+    height: 2px;
+    background-color: #000;
+}
+
+.possibility li {
+    width: 100%;
+    line-height: 2;
+}
+
+/* experiences */
+
+.experiences{
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.experiences-title {
+    position: relative;
+    display: block;
+    float: left;
+    width: 25%;
+    margin: 80px 0;
+    margin-left: 30px;
+    /* text-align: center; */
+}
+
+.experiences-title h2 {
+    position: relative;
+    display: block;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.experiences-title div{
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.experiences-title p{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.experiences-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.experiences-box {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.experiences-box:nth-child(1){
+    background: url('../images/travel.jpg');
+}
+
+.experiences-box:nth-child(2){
+    background: url('../images/catperson.jpg');
+}
+
+.experiences-box:nth-child(3){
+    background: url('../images/gallery.jpg');
+}
+
+.experiences-box:nth-child(4){
+    background: url('../images/challenge.jpg');
+}
+
+.experiences-box:nth-child(5){
+    background: url('../images/study.jpg');
+}
+
+.experiences-box:nth-child(6){
+    background: url('../images/reading.jpg');
+}
+
+.experiences-detail {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    opacity: 0;
+    transition: 0.3s;
+    padding: 30px;
+}
+
+.experiences-detail h3 {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translate3d(0, -15px, 0);
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.experiences-detail span {
+    position: relative;
+    display: block;
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translate3d(0, 15px, 0);
+}
+
+.experiences-box:hover .experiences-detail {
+    opacity: 1;
+}
+
+.experiences-box:hover .experiences-detail h3 {
+    transform: translate3d(0, 0, 0);
+}
+
+.experiences-box:hover .experiences-detail span {
+    transform: translate3d(0, 0, 0);
+}
+
+/* 하단 */
+
+.footer{
+    position: relative;
+    display: block;
+/* 
+    height: 500px; */
+}
+
+.contact-wrap{
+    position: relative;
+    display: block;
+    margin-top: 100px;
+}
+
+.contact-wrap > .intro-title{
+    position: relative;
+    display: block;
+    width: 20%;
+    text-align: left;
+    margin-top: 30px;
+    padding-left: 30px;
+    float: left;
+}
+
+.contact-left{
+    position: relative;
+    display: block;
+    width: 45%;
+    float: left;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-left h3{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.contact-left p {
+    position: relative;
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    /* margin-left: 65px; */
+}
+
+.contactinfo{
+    position: relative;
+    display: block;
+    /* text-align: left; */
+    margin-top: 50px;
+}
+
+.contactinfo span{
+    position: relative;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+}
+
+.contactinfo span a{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.contact-right{
+    position: relative;
+    display: block;
+    width: 35%;
+    float: right;
+}
+
+.contact-right img{
+    position: relative;
+    display: block;
+}
