@@ -28,20 +28,27 @@ window.onload = function(){
 
     // 헤더
     let header = $('.header')
-    let seemywork_position = $('.seemywork p').offset().top;
+    let text_position = $('.text-box').offset().top;
+    let window_h = $(window).scrollTop();
+
+    window_h = $(window).scrollTop();
+    if(window_h > text_position){
+        header.addClass('header-active')
+    }else{
+        header.removeClass('header-active')
+    }
+
+    // 스크롤했을 때 
 
     $(window).scroll(function(){
-        let window_h = $(window).scrollTop();
+        window_h = $(window).scrollTop();
 
-        if(window_h > seemywork_position){
+        if(window_h > text_position){
             header.addClass('header-active')
         }else{
             header.removeClass('header-active')
         }
     })
-
-
-
 
     const text = "Hi, I'm Lee Minjae,  \n a front-end developer who loves learning & challenging myself.";
     const text_space = document.querySelector('.text-box > h1');
