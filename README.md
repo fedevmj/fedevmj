@@ -9,7 +9,7 @@ Here you can check what I've learnt and created thus far 😘 <br><br>
 
 🔭 I’m currently working on cloning websites mainly using html, css, and javascript. <br>
 🌱 Now I'm learning vue.js to build a mockup application. <br>
-👩‍💻 I'm interested in learning a css preprocessor and a js library such as sass and grid to improve the productivity in publishing websites. <br>
+👩‍💻 I'm interested in learning a css preprocessor and a js library such as sass and grid to improve productivity in publishing websites. <br>
 🙆‍♀️ Besides, I'd love to study server-side tools like firebase to expand my knowledge of deploying applications.
 
 
