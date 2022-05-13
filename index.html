@@ -4,8 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- SEO -->
+    <meta name="title" content="MJ's Portfolio">
+    <meta name="description" content="프론트엔드 개발자 지망생 이민재의 포트폴리오 사이트입니다." />
+    <meta name="keywords"
+        content="웹퍼블리셔, 퍼블리셔, 프론트엔드, 프론트엔드 개발자, 개발자, publisher, frontend, frontend developer, fe devloper, Vue" />
+
+    <meta name="author" content="Minjae Lee" />
+    <meta name="og:site_name" content="MJ's Portfolio" />
+    <meta name="og:title" content="MJ's Portfolio" />
+    <meta name="og:description" content="프론트엔드 개발자 지망생 이민재의 포트폴리오 사이트입니다." />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="https://fedevmj.github.io/fedevmj/" />
+    <meta name="og:image" content="https://fedevmj.github.io/fedevmj/images/me.png" />
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -16,14 +31,17 @@
     <script src="js/html5shiv.js"></script>
     <![endif]-->
 
+    <!-- prefixfree -->
     <script src="js/prefixfree.min.js"></script>
+    <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
+    <!-- 반응형 -->
     <script src="js/respond.min.js"></script>
-
-    <!-- font-awsome -->
+    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-
+    <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- main -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
@@ -35,14 +53,16 @@
         <!-- 상단 -->
         <header class="header">
             <div class="container">
-                <div class="header-wrap clearfix">
-                    <!-- <div class="logo">
-                        <img src="images/logo_cat.png">
-                    </div> -->
+                <div class="header-wrap">
+                    <div class="logo">
+                        <img src="images/favicon-16x16.png" alt="로고">
+                        <a href="https://fedevmj.github.io/fedevmj/"><span class="name">M I N J A E</span></a>
+                        <!-- <img src="images/logo_cat.png"> -->
+                    </div>
                     <nav class="nav">
                         <ul class="gnb">
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
                             <li><a href="#aboutme">ABOUTME</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
                             <li><a href="#experiences">EXPERIENCES</a></li>
                             <li><a href="#contact">CONTACT</a></li>
                         </ul>
@@ -59,425 +79,18 @@
                     <div class="visual-wrap">
                         <div class="visual-box clearfix">
                             <div class="img-box">
-                                <img src="images/me.png">
+                                <img src="images/me.png" alt="이미지">
                             </div>
                             <div class="text-box">
                                 <h1></h1>
                                 <div class="seemywork">
                                     <h5>|</h5>
                                     <p>See My Work</p>
-                                    <div id="portfolio"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <div class="line-v"></div>
-
-
-            <section class="portfolio">
-                <div class="container clearfix">
-                    <div class="left">
-
-                        <div class="description">
-                            <h2>OSULOC</h2>
-                            <span>Category: Clone Coding / Independent Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/OSULOC/" target="_blank"><img
-                                        src="images/osuloc380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://www.osulloc.com/" target="_blank" class="underline">Original
-                                            <i class="fas fa-external-link-alt"></i></a></li>
-                                    <li><a href="https://fedevmj.github.io/OSULOC/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/OSULOC" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="line-h"></div>
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>STX Construction</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/stx_construction/" target="_blank"><img
-                                        src="images/stx380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="http://www.stxconst.co.kr/" target="_blank" class="underline">Original
-                                            <i class="fas fa-external-link-alt"></i></a></li>
-                                    <li><a href="https://fedevmj.github.io/stx_construction/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/stx_construction" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="line-h"></div>
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>GREENJUICE</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/greenjuice/" target="_blank"><img
-                                        src="images/greenjuice380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://greenjuice.pulmuone.com/" target="_blank"
-                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
-                                    <li><a href="https://fedevmj.github.io/greenjuice/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/greenjuice" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="line-h"></div>
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>SAN CHEONG</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/sancheong/" target="_blank"><img
-                                        src="images/sancheong380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://www.sancheong.go.kr/www/index.do" target="_blank"
-                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
-                                    <li><a href="https://fedevmj.github.io/sancheong/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/sancheong" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="line-h"></div>
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>TODO-LIST APPLICATION</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 2주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-vuejs"></i>
-                                    <span>Vue.js</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/sancheong/" target="_blank"><img
-                                        src="images/todoapp380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://www.sancheong.go.kr/www/index.do" target="_blank"
-                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
-                                    <li><a href="https://fedevmj.github.io/sancheong/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/sancheong" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="line-h"></div>
-                        </div>
-
-                        <!-- <div class="line-s"></div> -->
-
-                    </div>
-
-                    <div class="right">
-                        <div class="description">
-                            <h2>HABITAT</h2>
-                            <span>Category: Clone Coding / Independent Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/HABITAT/" target="_blank"><img
-                                        src="images/habitat380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://www.habitat.or.kr/" target="_blank" class="underline">Original
-                                            <i class="fas fa-external-link-alt"></i></a></li>
-                                    <li><a href="https://fedevmj.github.io/HABITAT/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/HABITAT" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>HANSALIM SHOP</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/hansalim/" target="_blank"><img
-                                        src="images/hansalim380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://shop.hansalim.or.kr/shopping/spMain.do" target="_blank"
-                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
-                                    <li><a href="https://fedevmj.github.io/hansalim/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/hansalim" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>KOREA LIFE INSURANCE ASSOCIATION</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/klia/" target="_blank"><img
-                                        src="images/klia380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://www.klia.or.kr/" target="_blank" class="underline">Original <i
-                                                class="fas fa-external-link-alt"></i></a></li>
-                                    <li><a href=https://fedevmj.github.io/klia/" target="_blank" class="underline">Work
-                                            <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/klia" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>PUSAN NATIONAL UNIVERSITY HOSPITAL</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/pnuh/" target="_blank"><img
-                                        src="images/pnuh380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://www.pnuh.or.kr/pnuh/main/main.do?rbsIdx=1" target="_blank"
-                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
-                                    <li><a href="https://fedevmj.github.io/pnuh/" target="_blank" class="underline">Work
-                                            <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/pnuh" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <!-- <div class="line-s"></div> -->
-
-                    </div>
-                </div>
-
             </section>
 
             <div class="line-v"></div>
@@ -485,11 +98,6 @@
 
             <section class="aboutme">
                 <div class="container">
-                    <!-- <div class="quote">
-                        <img src="images/quote_orange.png">
-                        <p>No matter what your current ability is, <br> effort is what ignites that ability and turns it into accomplishment.</p>
-                        <span>Carol S. Dweck</span>
-                    </div> -->
 
                     <div class="intro-wrap">
                         <div class="intro-title">
@@ -605,10 +213,423 @@
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
+
+            <section class="portfolio">
+                <div id="portfolio"></div>
+                <div class="container clearfix">
+
+                    <div class="portfolio-title">
+                        <div class="intro-title">
+                            <span class="orange"></span>
+                            <h2>PORTFOLIO</h2>
+                        </div>
+                    </div>
+
+                    <div class="left">
+                        <div class="description">
+                            <h2>OSULOC</h2>
+                            <span>Category: Clone Coding / Independent Study</span>
+                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
+
+                            <div class="skills">
+                                <div class="skill-box">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-css3"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="site">
+                                <a href="https://fedevmj.github.io/OSULOC/" target="_blank"><img
+                                        src="images/osuloc380490.jpg"></a>
+                            </div>
+
+                            <div class="link">
+                                <ul class="link-wrap clearfix">
+                                    <li><a href="https://fedevmj.github.io/OSULOC/" target="_blank"
+                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
+                                    <li><a href="#" target="_blank" class="underline">Responsive <i
+                                                class="fas fa-tablet-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://github.com/fedevmj/OSULOC" target="_blank"
+                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
+                                    <li><a href="https://www.osulloc.com/" target="_blank" class="underline">Original
+                                            <i class="fas fa-external-link-alt"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="line-h"></div>
+                        </div>
+
+                        <div class="line-s"></div>
+
+                        <div class="description">
+                            <h2>STX Construction</h2>
+                            <span>Category: Clone Coding / Group Study</span>
+                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
+
+                            <div class="skills">
+                                <div class="skill-box">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-css3"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="site">
+                                <a href="https://fedevmj.github.io/stx_construction/" target="_blank"><img
+                                        src="images/stx380490.jpg"></a>
+                            </div>
+
+                            <div class="link">
+                                <ul class="link-wrap clearfix">
+                                    <li><a href="https://fedevmj.github.io/stx_construction/" target="_blank"
+                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
+                                    <li><a href="#" target="_blank" class="underline">Responsive <i
+                                                class="fas fa-tablet-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://github.com/fedevmj/stx_construction" target="_blank"
+                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
+                                    <li><a href="http://www.stxconst.co.kr/" target="_blank" class="underline">Original
+                                            <i class="fas fa-external-link-alt"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="line-h"></div>
+                        </div>
+
+                        <div class="line-s"></div>
+
+                        <div class="description">
+                            <h2>GREENJUICE</h2>
+                            <span>Category: Clone Coding / Group Study</span>
+                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
+
+                            <div class="skills">
+                                <div class="skill-box">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-css3"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="site">
+                                <a href="https://fedevmj.github.io/greenjuice/" target="_blank"><img
+                                        src="images/greenjuice380490.jpg"></a>
+                            </div>
+
+                            <div class="link">
+                                <ul class="link-wrap clearfix">
+                                    <li><a href="https://fedevmj.github.io/greenjuice/" target="_blank"
+                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
+                                    <li><a href="#" target="_blank" class="underline">Responsive <i
+                                                class="fas fa-tablet-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://github.com/fedevmj/greenjuice" target="_blank"
+                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
+                                    <li><a href="https://greenjuice.pulmuone.com/" target="_blank"
+                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="line-h"></div>
+                        </div>
+
+                        <div class="line-s"></div>
+
+                        <div class="description">
+                            <h2>SAN CHEONG</h2>
+                            <span>Category: Clone Coding / Group Study</span>
+                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
+
+                            <div class="skills">
+                                <div class="skill-box">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-css3"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="site">
+                                <a href="https://fedevmj.github.io/sancheong/" target="_blank"><img
+                                        src="images/sancheong380490.jpg"></a>
+                            </div>
+
+                            <div class="link">
+                                <ul class="link-wrap clearfix">
+                                    <li><a href="https://fedevmj.github.io/sancheong/" target="_blank"
+                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
+                                    <li><a href="#" target="_blank" class="underline">Responsive <i
+                                                class="fas fa-tablet-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://github.com/fedevmj/sancheong" target="_blank"
+                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
+                                    <li><a href="https://www.sancheong.go.kr/www/index.do" target="_blank"
+                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="line-h"></div>
+                        </div>
+
+                        <div class="line-s"></div>
+
+                        <div class="description">
+                            <h2>TODO-LIST APPLICATION</h2>
+                            <span>Category: Clone Coding / Group Study</span>
+                            <p>작업기간: 약 2주일 / 기여도: 100%</p>
+
+                            <div class="skills">
+                                <div class="skill-box">
+                                    <i class="fab fa-vuejs"></i>
+                                    <span>Vue.js</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="site">
+                                <a href="https://fedevmj.github.io/sancheong/" target="_blank"><img
+                                        src="images/todoapp380490.jpg"></a>
+                            </div>
+
+                            <div class="link">
+                                <ul class="link-wrap clearfix">
+                                    <li><a href="https://fedevmj.github.io/sancheong/" target="_blank"
+                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
+                                    <li><a href="#" target="_blank" class="underline">Responsive <i
+                                                class="fas fa-tablet-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://github.com/fedevmj/sancheong" target="_blank"
+                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
+                                    <li><a href="https://www.sancheong.go.kr/www/index.do" target="_blank"
+                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="line-h"></div>
+                        </div>
+
+                        <!-- <div class="line-s"></div> -->
+
+                    </div>
+
+                    <div class="right">
+                        <div class="description">
+                            <h2>HABITAT</h2>
+                            <span>Category: Clone Coding / Independent Study</span>
+                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
+
+                            <div class="skills">
+                                <div class="skill-box">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-css3"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="site">
+                                <a href="https://fedevmj.github.io/HABITAT/" target="_blank"><img
+                                        src="images/habitat380490.jpg"></a>
+                            </div>
+
+                            <div class="link">
+                                <ul class="link-wrap clearfix">
+                                    <li><a href="https://fedevmj.github.io/HABITAT/" target="_blank"
+                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
+                                    <li><a href="#" target="_blank" class="underline">Responsive <i
+                                                class="fas fa-tablet-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://github.com/fedevmj/HABITAT" target="_blank"
+                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
+                                    <li><a href="https://www.habitat.or.kr/" target="_blank" class="underline">Original
+                                            <i class="fas fa-external-link-alt"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="line-s"></div>
+
+                        <div class="description">
+                            <h2>HANSALIM SHOP</h2>
+                            <span>Category: Clone Coding / Group Study</span>
+                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
+
+                            <div class="skills">
+                                <div class="skill-box">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-css3"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="site">
+                                <a href="https://fedevmj.github.io/hansalim/" target="_blank"><img
+                                        src="images/hansalim380490.jpg"></a>
+                            </div>
+
+                            <div class="link">
+                                <ul class="link-wrap clearfix">
+                                    <li><a href="https://fedevmj.github.io/hansalim/" target="_blank"
+                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
+                                    <li><a href="#" target="_blank" class="underline">Responsive <i
+                                                class="fas fa-tablet-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://github.com/fedevmj/hansalim" target="_blank"
+                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
+                                    <li><a href="https://shop.hansalim.or.kr/shopping/spMain.do" target="_blank"
+                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="line-s"></div>
+
+                        <div class="description">
+                            <h2>KOREA LIFE INSURANCE ASSOCIATION</h2>
+                            <span>Category: Clone Coding / Group Study</span>
+                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
+
+                            <div class="skills">
+                                <div class="skill-box">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-css3"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="site">
+                                <a href="https://fedevmj.github.io/klia/" target="_blank"><img
+                                        src="images/klia380490.jpg"></a>
+                            </div>
+
+                            <div class="link">
+                                <ul class="link-wrap clearfix">
+                                    <li><a href=https://fedevmj.github.io/klia/" target="_blank" class="underline">Work
+                                            <i class="far fa-caret-square-right"></i></a></li>
+                                    <li><a href="#" target="_blank" class="underline">Responsive <i
+                                                class="fas fa-tablet-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://github.com/fedevmj/klia" target="_blank"
+                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
+                                    <li><a href="https://www.klia.or.kr/" target="_blank" class="underline">Original <i
+                                                class="fas fa-external-link-alt"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="line-s"></div>
+
+                        <div class="description">
+                            <h2>PUSAN NATIONAL UNIVERSITY HOSPITAL</h2>
+                            <span>Category: Clone Coding / Group Study</span>
+                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
+
+                            <div class="skills">
+                                <div class="skill-box">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-css3"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-box">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="site">
+                                <a href="https://fedevmj.github.io/pnuh/" target="_blank"><img
+                                        src="images/pnuh380490.jpg"></a>
+                            </div>
+
+                            <div class="link">
+                                <ul class="link-wrap clearfix">
+                                    <li><a href="https://fedevmj.github.io/pnuh/" target="_blank" class="underline">Work
+                                            <i class="far fa-caret-square-right"></i></a></li>
+                                    <li><a href="#" target="_blank" class="underline">Responsive <i
+                                                class="fas fa-tablet-alt"></i></a>
+                                    </li>
+                                    <li><a href="https://github.com/fedevmj/pnuh" target="_blank"
+                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
+                                    <li><a href="https://www.pnuh.or.kr/pnuh/main/main.do?rbsIdx=1" target="_blank"
+                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <!-- <div class="line-s"></div> -->
+
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="line-v"></div>
 
             <div id="experiences"></div>
 
