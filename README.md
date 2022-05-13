@@ -14,11 +14,10 @@ Here you can check what I've learnt and created thus far 😘 <br><br>
 
 
 
-💎 LANGUAGE
+💎 LANGUAGE && TOOLKIT
 
-<img src="https://img.shields.io/badge/-HTML5-orange"> <img src="https://img.shields.io/badge/-CSS3-blue"> <img src="https://img.shields.io/badge/-JavaScript-yellow">
-<img src="https://img.shields.io/badge/-jQuery-informational"> <img src="https://img.shields.io/badge/-Vue-brightgreen"> <img src="https://img.shields.io/badge/-Github-black">
-<img src="https://img.shields.io/badge/-FlexBox-blueviolet">
+<img src="https://img.shields.io/badge/-HTML5-blue?style=flat-square&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/-CSS3-orange?style=flat-square&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=JavaScript&logoColor=white"> <img src="https://img.shields.io/badge/-jQuery-blue?style=flat-square&logo=jQuery&logoColor=white"> <img src="https://img.shields.io/badge/-Vue-brightgreen?style=flat-square&logo=Vue.js&logoColor=white"> <img src="https://img.shields.io/badge/-Github-black?style=flat-square&logo=GitHub&logoColor=white">
+<img src="https://img.shields.io/badge/-FlexBox-blueviolet?style=flat-square&logo=Flex&logoColor=white">
 
 <hr>
 
