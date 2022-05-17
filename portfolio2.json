@@ -1,0 +1,47 @@
+[
+  {
+    "id": 7,
+    "title": "SAN CHEONG",
+    "category": "Clone Coding / Group Study",
+    "period": "작업기간 약 1주일",
+    "thumbnail": "images/sancheong380490.jpg",
+    "alt": "산청캡쳐이미지",
+    "toolkit": ["HTML5", "CSS3", "JavaScript"],
+    "wlink": "https://fedevmj.github.io/sancheong/",
+    "rlink": "#",
+    "glink": "https://github.com/fedevmj/sancheong",
+    "olink": "https://www.sancheong.go.kr/www/index.do",
+    "vue": "0",
+    "res": "0"
+  },
+  {
+    "id": 8,
+    "title": "PUSAN NATIONAL UNIVERSITY HOSPITAL",
+    "category": "Clone Coding / Group Study",
+    "period": "작업기간 약 10일",
+    "thumbnail": "images/pnuh380490.jpg",
+    "alt": "부산대병원캡쳐이미지",
+    "toolkit": ["HTML5", "CSS3", "JavaScript"],
+    "wlink": "https://fedevmj.github.io/pnuh/",
+    "rlink": "#",
+    "glink": "https://github.com/fedevmj/pnuh",
+    "olink": "https://www.pnuh.or.kr/pnuh/main/main.do?rbsIdx=1",
+    "vue": "0",
+    "res": "0"
+  },
+  {
+    "id": 9,
+    "title": "TODO-LIST APPLICATION",
+    "category": "Vue Project / Group Study",
+    "period": "작업기간 약 2주일",
+    "thumbnail": "images/todoapp380490.jpg",
+    "alt": "TODO캡쳐이미지",
+    "toolkit": ["Vue3.0", "CSS3", "JavaScript"],
+    "wlink": "http://mjleemj.dothome.co.kr/",
+    "rlink": "#",
+    "glink": "https://github.com/fedevmj/todoapp.git",
+    "olink": "http://mjleemj.dothome.co.kr/",
+    "vue": "1",
+    "res": "0"
+  }
+]

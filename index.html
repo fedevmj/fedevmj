@@ -43,51 +43,53 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- main -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js"> </script>
 </head>
 
 <body>
 
     <!-- 전체 레이아웃 -->
     <div class="wrap">
+
         <!-- 상단 -->
         <header class="header">
             <div class="container">
-                <div class="header-wrap">
-                    <div class="logo">
-                        <img src="images/favicon-16x16.png" alt="로고">
-                        <a href="https://fedevmj.github.io/fedevmj/"><span class="name">M I N J A E</span></a>
-                        <!-- <img src="images/logo_cat.png"> -->
-                    </div>
-                    <nav class="nav">
-                        <ul class="gnb">
-                            <li><a href="#aboutme">ABOUTME</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <li><a href="#experiences">EXPERIENCES</a></li>
-                            <li><a href="#contact">CONTACT</a></li>
-                        </ul>
-                    </nav>
+
+                <div class="logo">
+                    <img src="images/favicon-32x32.png" alt="로고">
+                    <a href="https://fedevmj.github.io/fedevmj/">MINJAE</a>
                 </div>
+
+                <div class="nav">
+                    <ul class="gnb">
+                        <li><a href="#aboutme">ABOUTME</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#experiences">EXPERIENCES</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+
             </div>
+
         </header>
-        <!--//상단  -->
 
         <!-- 메인 -->
         <div class="main">
+
+            <!-- VISUAL -->
             <section class="visual">
                 <div class="container">
-                    <div class="visual-wrap">
-                        <div class="visual-box clearfix">
-                            <div class="img-box">
-                                <img src="images/me.png" alt="이미지">
-                            </div>
-                            <div class="text-box">
-                                <h1></h1>
-                                <div class="seemywork">
-                                    <h5>|</h5>
-                                    <p>See My Work</p>
-                                </div>
-                            </div>
+                    <div class="image-box">
+                        <img src="images/me.png" alt="이미지">
+                    </div>
+                    <div class="text-box">
+                        <div class="text-words">
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                        <div class="seemywork">
+                            <h5> | </h5>
+                            <span>See My Work</span>
                         </div>
                     </div>
                 </div>
@@ -96,35 +98,38 @@
             <div class="line-v"></div>
             <div id="aboutme"></div>
 
+            <!-- ABOUTME -->
             <section class="aboutme">
                 <div class="container">
 
                     <div class="intro-wrap">
-                        <div class="intro-title">
-                            <h2>ABOUT <br> ME</h2>
+                        <div class="title">
+                            <h2>ABOUT</h2>
+                            <h2>ME</h2>
                         </div>
-                        <div class="intro-desc">
-                            <h3> Who Am I? :)</h3>
-                            <span class="orange"></span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quam non nemo, modi aperiam
-                                accusantium voluptatem magnam aliquid corporis sed nam consequatur ullam est quas? Alias
-                                harum animi labore ad.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum ut sint,
-                                consequuntur odio nesciunt illum suscipit dolorum quod. </p>
+                        <div class="desc">
+                            <h3>Who Am I? :)</h3>
+                            <span class="line-p"></span>
+                            <p> 꾸준한 배움을 통해 세상을 바라보는 해상도를 높이고 싶은, 프론트엔드 개발자 지망생 이민재입니다 🙋‍♀️ </p>
+                            <p> 프론트엔드 개발 교육 과정에 참여하여 HTML, CSS, JavaScript의 기초를 익히고, 이를 응용한 다양한 웹사이트의
+                                클론코딩 작업을 진행함으로써 실전 감각을 익혀왔습니다. 그 과정에서 jQuery나 SCSS, GitHub 등의 사용법도 익혀, 개발의 속도 및 효율성을
+                                향상시킬 수
+                                있는 도구들에도 점차 관심을 확장해 나가고 있는 중입니다.
+                                최근에는 Vue.js를 활용하여 웹 애플리케이션을 개발하는 방법을 공부하고 있습니다.</p>
                         </div>
                     </div>
 
                     <div class="record-wrap">
+
                         <div class="record-left">
-                            <h3 class="record-title">Profile </h3>
+                            <h3 class="record-title">PROFILE </h3>
                             <ul class="inner-left">
                                 <li>Name</li>
                                 <li>Position</li>
                                 <li>Email</li>
                                 <li>Github</li>
-                                <li class="row2">Certificate</span>
-                                <li></li>
-                                <li><span class="large">Work Experience</span></li>
+                                <li class="row3">Certificate</span>
+                                <li>Work</li>
                             </ul>
                             <ul class="inner-right">
                                 <li>이민재 👩‍💻</li>
@@ -138,28 +143,39 @@
                                 <li>에이스학원 <span>(2013.06-2020.07)</span></li>
                             </ul>
                         </div>
+
                         <div class="record-middle">
-                            <h3 class="record-title">Study</h3>
+                            <h3 class="record-title">STUDY</h3>
                             <ul class="inner-left">
-                                <li class="row3">Graduation</li>
+                                <li class="row4">Graduation</li>
                                 <li>Education</li>
                             </ul>
                             <ul class="inner-right">
-                                <li class="row2">영남대학교 <br> <span>majored in 국제통상 & 심리 (2007-2011)</span></li>
-                                <li class="row2">Liverpool Hope University <span>majored in Psychology
-                                        (2020-2021)</span></li>
-                                <li></li>
-                                <li class="row2"><em class="highlight">프론트엔드 개발자 양성 과정</em><span>from 대구그린컴퓨터아트학원
-                                        (2022.01-2022.06)</span></li>
-                                <li class="row2">Vue - The Complete Guide (incl. Router & Composition API) <span>from
-                                        Udemy (2022.04-2022.05)</span></li>
+                                <li class="row2">
+                                    <span class="large">영남대학교</span>
+                                    <p>majored in 국제통상 & 심리 (2007-2011)</p>
+                                </li>
+                                <li class="row2">
+                                    <span class="large">Liverpool Hope University</span>
+                                    <p>majored in Psychology (2020-2021)</p>
+                                </li>
+                                <li class="row2">
+                                    <em class="highlight"><span class="large">프론트엔드 개발자 양성 과정</span></em>
+                                    <p>from 대구그린컴퓨터아트학원 (2022.01-2022.06)</p>
+                                </li>
+                                <li class="row2">
+                                    <span class="large">Vue - The Complete Guide</span>
+                                    <span class="large">(incl. Router & Composition API)</span>
+                                    <p>from Udemy (2022.04-현재)</p>
+                                </li>
                             </ul>
                         </div>
+
                         <div class="record-right">
-                            <h3 class="record-title">Capability</h3>
+                            <h3 class="record-title">CAPABILITY</h3>
                             <ul class="inner-left">
-                                <li class="row3">Toolkit</li>
-                                <li class="row3">Interest</li>
+                                <li class="row4">Toolkit</li>
+                                <li>Interest</li>
                             </ul>
                             <ul class="inner-right">
                                 <h5>HTML/CSS</h5>
@@ -167,476 +183,96 @@
                                 <h5>jQuery</h5>
                                 <h5>Vue</h5>
                                 <h5>Github</h5>
-                                <h5>Bootstrap</h5>
                                 <h5>Flex</h5>
+                                <h5>SCSS</h5>
                                 <li></li>
-                                <li></li>
+                                <h5>Bootstrap</h5>
                                 <h5>PHP</h5>
                                 <h5>mariaDB</h5>
-                                <h5>SCSS</h5>
                                 <h5>Photoshop</h5>
                                 <h5>Grid</h5>
                             </ul>
                         </div>
+
                     </div>
 
                     <div class="vision-wrap">
-                        <div class="vision">
-                            <h3 class="record-title-side">Possibility</h3>
-                            <i class="lineForPossiblity"></i>
-                            <div class="possibility">
-                                <ul>
-                                    <li><strong>hardworking:</strong> 대학 4년 & 대학원 입학 장학금을 수령했습니다 👩‍🎓</li>
-                                    <li><strong>responsible:</strong> 중간관리자로서 한 직장에서 7년 근속하였습니다 <br> (feat. 업무분장 및 수업
-                                        커리큘럼 업데이트 & 야근) 🙌</li>
-                                    <li><strong>organised:</strong> MBTI는 INTJ! 계획은 나의 힘! 리서치를 기반으로 계획을 세우고 그에 따라 의사결정을
-                                        내리는 것을 선호합니다 📊</li>
-                                    <li><strong>passionate for learning:</strong> 지적 호기심을 충족하는데서 즐거움을 얻는 편입니다 (feat.
-                                        대학원) 📝 취미는 독서, 영어 공부, 최근에는 개발 공부 💻</li>
-                                    <li><strong>knowledgable in communication:</strong> 심리학을 전공하고 오랫동안 학생들을 가르치고 상담한 경험을
-                                        가지고 있습니다. 👩‍🏫 </li>
-                                </ul>
-                            </div>
 
-                            <h3 class="record-title-side">Roadmap</h3>
-                            <i class="lineForRoadmap"></i>
-                            <div class="possibility">
-                                <ul>
-                                    <li>🚩<strong>2022.6 현재 프론트엔드 개발자 양성과정 수료</strong> <br> FE 개발자가 되기 위한 입문 과정을 수료하고
-                                        웹사이트 클론코딩, js를 활용한 앱개발, 개인 포트폴리오 사이트 제작 등을 할 수 있습니다.</li>
-                                    <li>🚩<strong>1년 후 2023.6 기술스택 심화시키기</strong> <br> 기본 FE 지식을 꾸준하게 심화 학습하고 version
-                                        control systems, package managers 및 다양한 프레임워크에 대한 이해도를 높이겠습니다.</li>
-                                    <li>🚩<strong>3년 후 2025.6 협업&소통하는 개발자로 거듭나기</strong> <br> 지식/업무 경험의 확장을 통해 FE 개발자 뿐
-                                        아니라 디자이너 및 BE 개발자와 원활하게 소통할 수 있는 개발자가 되겠습니다.</li>
-                                    <li>🚩<strong>5년 후 2027.6 기여하는 개발자로 업그레이드</strong> <br> 주어진 임무를 완수하는데 만족하지 않고 소속된
-                                        조직과 사회에 선한 영향력을 미칠 수 있는 방식으로 아이디어 제안 및 프로젝트를 진행하고 싶습니다.</li>
-                                </ul>
-                            </div>
+                        <div class="vision possibility">
+                            <h3 class="record-title-side">POSSIBILITY</h3>
+                            <i class="lineForPossiblity"></i>
+
+                            <ul class="inner-left">
+                                <li class="strong">Hardworking</li>
+                                <li class="row2 strong">Responsible</li>
+                                <li class="row2 strong">Organised</li>
+                                <li class="row2 strong">Passionate for learning</li>
+                                <li class="strong">Knowledgable in comms</li>
+                            </ul>
+                            <ul class="inner-right">
+                                <li>대학 4년 & 대학원 입학 장학금을 수령했습니다 👩‍🎓</li>
+                                <li class="row2"> 중간관리자로서 한 직장에서 7년 근속하였습니다
+                                    <span class="feat"> (feat. 업무분장 및 수업 커리큘럼 업데이트 & 야근) 🙌 </span></li>
+                                <li class="row2"> MBTI는 INTJ! 계획은 나의 힘! 리서치를 기반으로 계획을 세우고 그에 따라 의사결정을
+                                    내리는 것을 선호합니다 📊</li>
+                                <li class="row2"> 지적 호기심을 충족하는데서 즐거움을 얻는 편입니다
+                                    <span class="feat">(feat. 대학원) 📝 취미는 독서, 영어 공부, 최근에는 개발 공부 💻 </span></li>
+                                <li> 심리학을 전공했고 오랫동안 학생들을 가르치고 상담한 경험을
+                                    가지고 있어 커뮤니케이션에 자신있습니다 :) 👩‍🏫 </li>
+                            </ul>
+                        </div>
+
+                        <div class="vision roadmap">
+                            <h3 class="record-title-side">ROADMAP</h3>
+                            <i class="lineForPossiblity"></i>
+
+                            <ul class="inner">
+                                <li class="strong">🚩2022.6 현재 프론트엔드 개발자 양성과정 수료</li>
+                                <li class="row2">FE 개발자가 되기 위한 입문 과정을 수료하고 웹사이트 클론코딩, js를 활용한 앱개발, 개인 포트폴리오 사이트 제작 등을 할
+                                    수 있습니다.</li>
+                                <li class="strong">🚩1년 후 2023.6 기술스택 심화시키기</li>
+                                <li class="row2"> 기본 FE 지식을 꾸준하게 심화 학습하고 version control systems, package managers 및 다양한
+                                    프레임워크에 대한 이해도를
+                                    높이겠습니다.</li>
+                                <li class="strong">🚩3년 후 2025.6 협업&소통하는 개발자로 거듭나기</li>
+                                <li class="row2"> 지식/업무 경험의 확장을 통해 FE 개발자 뿐아니라 디자이너 및 BE 개발자와 원활하게 소통할 수 있는 개발자가 되겠습니다.
+                                </li>
+                                <li class="strong">🚩5년 후 2027.6 기여하는 개발자로 업그레이드</li>
+                                <li class="row2"> 주어진 임무를 완수하는데 만족하지 않고 소속된 조직과 사회에 선한 영향력을 미칠 수 있는 방식으로 아이디어 제안 및 프로젝트를
+                                    진행하고 싶습니다.</li>
+                            </ul>
+                            <div id="portfolio"></div>
                         </div>
                     </div>
                 </div>
+
             </section>
 
+            <!-- PORTFOLIO -->
             <section class="portfolio">
-                <div id="portfolio"></div>
                 <div class="container clearfix">
 
-                    <div class="portfolio-title">
-                        <div class="intro-title">
-                            <span class="orange"></span>
-                            <h2>PORTFOLIO</h2>
-                        </div>
+                    <div class="title">
+                        <span class="line-p"></span>
+                        <h2>PORTFOLIO</h2>
                     </div>
 
-                    <div class="left">
-                        <div class="description">
-                            <h2>OSULOC</h2>
-                            <span>Category: Clone Coding / Independent Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/OSULOC/" target="_blank"><img
-                                        src="images/osuloc380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://fedevmj.github.io/OSULOC/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/OSULOC" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                    <li><a href="https://www.osulloc.com/" target="_blank" class="underline">Original
-                                            <i class="fas fa-external-link-alt"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="line-h"></div>
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>STX Construction</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/stx_construction/" target="_blank"><img
-                                        src="images/stx380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://fedevmj.github.io/stx_construction/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/stx_construction" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                    <li><a href="http://www.stxconst.co.kr/" target="_blank" class="underline">Original
-                                            <i class="fas fa-external-link-alt"></i></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="line-h"></div>
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>GREENJUICE</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/greenjuice/" target="_blank"><img
-                                        src="images/greenjuice380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://fedevmj.github.io/greenjuice/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/greenjuice" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                    <li><a href="https://greenjuice.pulmuone.com/" target="_blank"
-                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="line-h"></div>
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>SAN CHEONG</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/sancheong/" target="_blank"><img
-                                        src="images/sancheong380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://fedevmj.github.io/sancheong/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/sancheong" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                    <li><a href="https://www.sancheong.go.kr/www/index.do" target="_blank"
-                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="line-h"></div>
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>TODO-LIST APPLICATION</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 2주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-vuejs"></i>
-                                    <span>Vue.js</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/sancheong/" target="_blank"><img
-                                        src="images/todoapp380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://fedevmj.github.io/sancheong/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/sancheong" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                    <li><a href="https://www.sancheong.go.kr/www/index.do" target="_blank"
-                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
-                                </ul>
-                            </div>
-
-                            <div class="line-h"></div>
-                        </div>
-
-                        <!-- <div class="line-s"></div> -->
-
+                    <div class="portfolio-box clearfix">
+                        <div class="left"></div>
+                        <div class="right"></div>
                     </div>
 
-                    <div class="right">
-                        <div class="description">
-                            <h2>HABITAT</h2>
-                            <span>Category: Clone Coding / Independent Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
+                    <button class="more">MORE</button>
 
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/HABITAT/" target="_blank"><img
-                                        src="images/habitat380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://fedevmj.github.io/HABITAT/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/HABITAT" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                    <li><a href="https://www.habitat.or.kr/" target="_blank" class="underline">Original
-                                            <i class="fas fa-external-link-alt"></i></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>HANSALIM SHOP</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/hansalim/" target="_blank"><img
-                                        src="images/hansalim380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://fedevmj.github.io/hansalim/" target="_blank"
-                                            class="underline">Work <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/hansalim" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                    <li><a href="https://shop.hansalim.or.kr/shopping/spMain.do" target="_blank"
-                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>KOREA LIFE INSURANCE ASSOCIATION</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/klia/" target="_blank"><img
-                                        src="images/klia380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href=https://fedevmj.github.io/klia/" target="_blank" class="underline">Work
-                                            <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/klia" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                    <li><a href="https://www.klia.or.kr/" target="_blank" class="underline">Original <i
-                                                class="fas fa-external-link-alt"></i></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="line-s"></div>
-
-                        <div class="description">
-                            <h2>PUSAN NATIONAL UNIVERSITY HOSPITAL</h2>
-                            <span>Category: Clone Coding / Group Study</span>
-                            <p>작업기간: 약 1주일 / 기여도: 100%</p>
-
-                            <div class="skills">
-                                <div class="skill-box">
-                                    <i class="fab fa-html5"></i>
-                                    <span>HTML5</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-css3"></i>
-                                    <span>CSS3</span>
-                                </div>
-                                <div class="skill-box">
-                                    <i class="fab fa-js"></i>
-                                    <span>JavaScript</span>
-                                </div>
-                            </div>
-
-                            <div class="site">
-                                <a href="https://fedevmj.github.io/pnuh/" target="_blank"><img
-                                        src="images/pnuh380490.jpg"></a>
-                            </div>
-
-                            <div class="link">
-                                <ul class="link-wrap clearfix">
-                                    <li><a href="https://fedevmj.github.io/pnuh/" target="_blank" class="underline">Work
-                                            <i class="far fa-caret-square-right"></i></a></li>
-                                    <li><a href="#" target="_blank" class="underline">Responsive <i
-                                                class="fas fa-tablet-alt"></i></a>
-                                    </li>
-                                    <li><a href="https://github.com/fedevmj/pnuh" target="_blank"
-                                            class="underline">Github <i class="fab fa-git-square"></i></a></li>
-                                    <li><a href="https://www.pnuh.or.kr/pnuh/main/main.do?rbsIdx=1" target="_blank"
-                                            class="underline">Original <i class="fas fa-external-link-alt"></i></a></li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <!-- <div class="line-s"></div> -->
-
-                    </div>
                 </div>
-
             </section>
 
-            <div class="line-v"></div>
-
-            <div id="experiences"></div>
+            <!-- EXPERIENCES -->
 
             <section class="experiences">
-                <div class="container">
-                    <div class="experiences-title">
-                        <span class="orange"></span>
+                <div class="container" id="experiences">
+                    <div class="title">
+                        <span class="line-p"></span>
                         <h2>EXPE<br> -RIENCES</h2>
                         <div>
                             <p>💌 이곳에는 저의 평소 생각과 관심사를 담았습니다.</p>
@@ -644,6 +280,7 @@
                     </div>
 
                     <div class="experiences-wrap">
+
                         <div class="experiences-box">
                             <div class="experiences-detail">
                                 <h3>I Love Travelling</h3>
@@ -661,48 +298,50 @@
                         <div class="experiences-box">
                             <div class="experiences-detail">
                                 <h3>I Love Drawings</h3>
-                                <span>🖼 작품을 통해 작가가 전달하고자 하는 메시지를 이해해 보려고 노력합니다.</span>
+                                <span>🖼 작품 감상을 통해 주어지는 것으로서의 소통이 아닌, 적극적인 태도로 세상과 소통하는 법을
+                                    배우고자 노력합니다.</span>
                             </div>
                         </div>
 
                         <div class="experiences-box">
                             <div class="experiences-detail">
                                 <h3>I Love Challenges</h3>
-                                <span>💡 "Becoming is better than being. -Carol S. Dweck" '되고 싶은 나'가 되기 위해 노력합니다.</span>
+                                <span>💡 '되고 싶은 나'로 살기로 결정했고, 그 결과 오랫동안 꿈꿔온 공부를 다시 시작할 수 있었습니다.</span>
                             </div>
                         </div>
 
                         <div class="experiences-box">
                             <div class="experiences-detail">
-                                <h3>null</h3>
-                                <span>about my experience</span>
+                                <h3>What I Write Becomes Reality</h3>
+                                <span>💻 개발은 저의 창의성을 충족시켜주는 멋진 도구입니다. </span>
                             </div>
                         </div>
 
                         <div class="experiences-box">
                             <div class="experiences-detail">
                                 <h3>I Love Reading</h3>
-                                <span>📚 저의 세계를 확장시켜주는 독서! 나와 타인과 세상을 이해하기 위해서 읽습니다.</span>
+                                <span>📚 저의 세계를 확장시켜주는 독서! 나와 타인과 세상을 이해하기 위해서 읽습니다. 최근에는 개발 지식을 쌓기 위한 목적으로 주로 읽고 있습니다
+                                    :)
+                                </span>
                             </div>
                         </div>
+
                     </div>
             </section>
         </div>
-        <!--//메인 -->
 
         <!-- 하단 -->
         <footer class="footer">
             <div class="container">
-                <div class="contact-wrap clearfix" id="contact">
-                    <div class="intro-title">
-                        <span class="orange"></span>
+                <div class="contact-wrap" id="contact">
+                    <div class="title">
+                        <span class="line-p"></span>
                         <h2>CONTACT</h2>
                     </div>
                     <div class="contact-left">
                         <h3>꾸준함으로 성장하는 프론트엔드 개발자, 이민재입니다 :)</h3>
                         <p>html, css, js를 기반으로 하여 <em class="highlight">웹퍼블리싱 작업</em>을 합니다.</p>
                         <p><em class="highlight">Vue.js를 이용하여 SPA 작업</em>을 합니다.</p>
-                        <!-- <p>프론트엔드 개발자 양성과정을 수료 예정이며 틈틈이 온라인 강의를 통해 독학을 병행하였습니다.</p> -->
                         <p>사회에 선한 영향력을 줄 수 있는 개발자가 되는 것이 꿈입니다.</p>
                         <div class="contactinfo">
                             <span><i class="fas fa-envelope"></i> <a href="mailto:dev.mjleemj@gmail.com"
@@ -711,7 +350,6 @@
                                     class="underline">https://github.com/fedevmj</a></span>
                         </div>
 
-                        <!-- <p>Copyrightⓒ 2008 All rights reserved by Minjae Lee</p> -->
                     </div>
                     <div class="contact-right">
                         <img src="images/contact_me.jpeg">
@@ -722,10 +360,7 @@
         </footer>
         <!--// 하단 -->
 
-
-
     </div>
-
 
 </body>
 
