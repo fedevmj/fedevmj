@@ -191,6 +191,30 @@ p {
   font-size: 16px;
 }
 
+/* 위로가기 */
+.gotop {
+  position: fixed;
+  right: -50px;
+  bottom: 50px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  z-index: 99;
+  -webkit-transition: right 0.3s;
+  transition: right 0.3s;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.gotop i {
+  font-size: 30px;
+}
+
+.gotop-active {
+  right: 5%;
+}
+
 /* 전체 레이아웃 */
 .wrap {
   position: relative;
@@ -1009,14 +1033,24 @@ p {
   cursor: pointer;
 }
 
-.footer .container .contact-wrap .contact-right {
+.footer .container .contact-wrap .contact-left .contactinfo span:last-child {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ed6c00;
+}
+
+.footer .container .contact-wrap .contact-left .contactinfo span .download {
+  color: #ed6c00;
+}
+
+.footer .container .contact-wrap .contact-left .contact-right {
   position: relative;
   display: block;
   width: 30%;
   float: right;
 }
 
-.footer .container .contact-wrap .contact-right img {
+.footer .container .contact-wrap .contact-left .contact-right img {
   position: relative;
   display: block;
 }

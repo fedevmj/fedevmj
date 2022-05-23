@@ -62,10 +62,10 @@ body {
 }
 
 // 변수
-$test-color: #e1bee7;
 $narrow: 1150px;
 $wide: 1400px;
 $center: 0 auto;
+
 @mixin box-shadow($x-axis: 0, $y-axis: 1px, $blur: 2px, $color: $default) {
   box-shadow: $x-axis $y-axis $blur $color;
 }
@@ -197,6 +197,29 @@ p {
   font-size: 16px;
 }
 
+/* 위로가기 */
+.gotop {
+  position: fixed;
+  right: -50px;
+  bottom: 50px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  z-index: 99;
+  transition: right 0.3s;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  i {
+    font-size: 30px;
+  }
+}
+
+.gotop-active {
+  right: 5%;
+}
+
 /* 전체 레이아웃 */
 .wrap {
   position: relative;
@@ -299,6 +322,7 @@ p {
     position: relative;
     display: block;
     width: 50%;
+
     img {
       mix-blend-mode: multiply;
     }
@@ -547,6 +571,7 @@ p {
     margin-top: 50px;
     border-right: 1px solid #ebebeb;
   }
+
   .right {
     border-right: none;
   }
@@ -602,9 +627,11 @@ p {
     position: relative;
     display: block;
     margin-top: 50px;
+
     a {
       position: relative;
       display: block;
+
       img {
         filter: grayscale(100%);
         transition: filter 0.3s, box-shadow 0.3s;
@@ -659,16 +686,19 @@ p {
           right: 0;
           transition: width 0.3s cubic-bezier(0.4, 1, 0.8, 1);
         }
+
         &:hover::before,
         &:hover::after {
           width: 100%;
         }
+
         &:hover {
           color: #000;
         }
       }
     }
   }
+
   .line-s {
     position: relative;
     display: block;
@@ -678,10 +708,12 @@ p {
     background-color: #b7b7a4;
     background-color: #a5a58d;
     margin: 0 auto;
+
     &:last-child {
       display: none;
     }
   }
+
   .more {
     position: relative;
     display: block;
@@ -697,6 +729,7 @@ p {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     margin: 100px auto;
+
     &:hover {
       color: #fff;
       background-color: #000;
@@ -709,6 +742,7 @@ p {
 .experiences {
   position: relative;
   display: block;
+
   // height: 100%;
   // padding-top: 50px;
   .title {
@@ -719,9 +753,11 @@ p {
     margin: 80px 0;
     margin-left: 30px;
     text-align: left;
+
     div {
       position: relative;
       display: block;
+
       p {
         position: relative;
         display: block;
@@ -731,6 +767,7 @@ p {
       }
     }
   }
+
   .experiences-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -796,6 +833,7 @@ p {
         opacity: 0;
         transition: 0.3s;
         padding: 30px;
+
         h3 {
           position: relative;
           display: block;
@@ -806,6 +844,7 @@ p {
           padding-top: 80px;
           padding-bottom: 20px;
         }
+
         span {
           position: relative;
           display: block;
@@ -826,15 +865,18 @@ p {
 .footer {
   position: relative;
   display: block;
+
   .container {
     width: $wide;
     height: 500px;
+
     .contact-wrap {
       position: relative;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       margin-top: 150px;
+
       .title {
         position: relative;
         display: block;
@@ -842,12 +884,14 @@ p {
         margin-top: 0;
         width: 20%;
       }
+
       .contact-left {
         position: relative;
         display: block;
         width: 50%;
         padding: 50px;
         text-align: center;
+
         h3 {
           position: relative;
           display: block;
@@ -855,6 +899,7 @@ p {
           font-weight: 600;
           margin-bottom: 30px;
         }
+
         p {
           position: relative;
           display: block;
@@ -863,32 +908,47 @@ p {
           line-height: 1.5;
           text-align: center;
         }
+
         .contactinfo {
           position: relative;
           display: block;
           margin-top: 50px;
+
           span {
             position: relative;
             display: block;
             height: 30px;
             cursor: pointer;
+
             a {
               position: relative;
               display: inline-block;
               font-size: 16px;
               cursor: pointer;
             }
+
+            &:last-child {
+              font-size: 14px;
+              font-weight: 500;
+              color: #ed6c00;
+            }
+
+            .download {
+              color: #ed6c00;
+            }
           }
         }
-      }
-      .contact-right {
-        position: relative;
-        display: block;
-        width: 30%;
-        float: right;
-        img {
+
+        .contact-right {
           position: relative;
           display: block;
+          width: 30%;
+          float: right;
+
+          img {
+            position: relative;
+            display: block;
+          }
         }
       }
     }

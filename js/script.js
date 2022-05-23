@@ -1,4 +1,25 @@
 window.onload = function () {
+  //위로가기
+  let gotop = $(".gotop");
+
+  gotop.click(function () {
+    $("html").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
+
+  $(window).scroll(function () {
+    let temp = $(window).scrollTop();
+    if (temp > 110) {
+      gotop.addClass("gotop-active");
+    } else {
+      gotop.removeClass("gotop-active");
+    }
+  });
+
   // 헤더
   let header = $(".header");
   let text_position = $(".text-box").offset().top;
@@ -25,21 +46,12 @@ window.onload = function () {
   let gnb_a = $(".gnb > li > a");
   let menu = ["#aboutme", "#portfolio", "#experiences", "#contact"];
   let menu_position = [];
-  for (let i = 0; i < menu.length; i++) {
-    let link = menu[i];
-    menu_position[i] = $(link).offset().top;
-    // 641, 5532.234375, 7046.234375, 7936.234375
-    if (i > 1) {
-      menu_position[i] += 2900;
-    }
-  }
 
   $.each(gnb_a, function (index, item) {
     $(this).click(function (event) {
       event.preventDefault();
       link = $(this).attr("href");
-      let link_position = menu_position[index];
-      console.log(link_position);
+      let link_position = Math.ceil($(link).offset().top);
       $("html").animate(
         {
           scrollTop: link_position,
@@ -131,26 +143,30 @@ window.onload = function () {
               <p>${temp.period}</p>
   
               <div class="skills">
-              <div class="skill-box">`;
-
-            if (temp.vue === "1") {
-              portfolio_html_left += `<i class="fab fa-vuejs"></i>`;
-            } else {
-              portfolio_html_left += `<i class="fab fa-html5"></i>`;
-            }
-
-            portfolio_html_left += `
-              <span>${temp.toolkit[0]}</span>
+              <div class="skill-box">
+                <i class="fab fa-html5"></i>
+                <span>${temp.toolkit[0]}</span>
               </div>
 
               <div class="skill-box">
                 <i class="fab fa-css3"></i>
                 <span>${temp.toolkit[1]}</span>
               </div>
+
               <div class="skill-box">
                 <i class="fab fa-js"></i>
                 <span>${temp.toolkit[2]}</span>
-              </div>
+              </div>`;
+
+            if (temp.vue === "1") {
+              portfolio_html_left += `
+                <div class="skill-box">
+                <i class="fab fa-vuejs"></i>
+                <span>${temp.toolkit[3]}</span>
+              </div>`;
+            }
+
+            portfolio_html_left += `
             </div>
   
             <div class="site">
@@ -159,9 +175,17 @@ window.onload = function () {
             </div>
   
             <div class="link">
-              <ul class="link-wrap clearfix">
-                <li><a href="${temp.wlink}" target="_blank" class="underline">Work 
-                <i class="far fa-caret-square-right"></i></a></li>`;
+              <ul class="link-wrap clearfix">`;
+
+            if (temp.clone === "1") {
+              portfolio_html_left += `
+              <li>
+                <a href="${temp.wlink}" target="_blank" class="underline">
+                  Work 
+                <i class="far fa-caret-square-right"></i>
+                </a>
+              </li>`;
+            }
 
             if (temp.res === "1") {
               portfolio_html_left += `
@@ -170,13 +194,26 @@ window.onload = function () {
                   </li>`;
             }
 
+            if (temp.vue === "1") {
+              portfolio_html_left += `
+                <li>
+                  <a href="${temp.vlink}" target="_blank" class="underline">Vue<i class="fab fa-vuejs"></i></a>
+                </li>`;
+            }
+
             portfolio_html_left += `
                   <li>
                     <a href="${temp.glink}" target="_blank" class="underline">Github <i class="fab fa-git-square"></i></a>
-                  </li>
+                  </li>`;
+
+            if (temp.clone === "1") {
+              portfolio_html_left += `
                   <li>
                     <a href="${temp.olink}" target="_blank" class="underline">Original <i class="fas fa-external-link-alt"></i></a>
-                  </li>
+                  </li>`;
+            }
+
+            portfolio_html_left += `
                 </ul>
               </div>
             </div>
@@ -190,15 +227,8 @@ window.onload = function () {
               <p>${temp.period}</p>
   
               <div class="skills">
-                <div class="skill-box">`;
-
-            if (temp.vue === "1") {
-              portfolio_html_right += `<i class="fab fa-vuejs"></i>`;
-            } else {
-              portfolio_html_right += `<i class="fab fa-html5"></i>`;
-            }
-
-            portfolio_html_right += `
+              <div class="skill-box">
+                <i class="fab fa-html5"></i>
                 <span>${temp.toolkit[0]}</span>
               </div>
 
@@ -206,40 +236,73 @@ window.onload = function () {
                 <i class="fab fa-css3"></i>
                 <span>${temp.toolkit[1]}</span>
               </div>
+
               <div class="skill-box">
                 <i class="fab fa-js"></i>
                 <span>${temp.toolkit[2]}</span>
-              </div>
+              </div>`;
+
+            if (temp.vue === "1") {
+              portfolio_html_right += `
+                <div class="skill-box">
+                <i class="fab fa-vuejs"></i>
+                <span>${temp.toolkit[3]}</span>
+              </div>`;
+            }
+
+            portfolio_html_right += `
             </div>
   
             <div class="site">
-              <a href="${temp.wlink}" target="_blank"><img src="${temp.thumbnail}" alt="${temp.alt}"></a>
+              <a href="${temp.wlink}" target="_blank"><img src="${temp.thumbnail}"
+                  alt="${temp.alt}"></a>
             </div>
   
             <div class="link">
-              <ul class="link-wrap clearfix">
-                <li><a href="${temp.wlink}" target="_blank" class="underline">Work <i class="far fa-caret-square-right"></i></a>
-                </li>`;
+              <ul class="link-wrap clearfix">`;
+
+            if (temp.clone === "1") {
+              portfolio_html_right += `
+              <li>
+                <a href="${temp.wlink}" target="_blank" class="underline">
+                  Work 
+                <i class="far fa-caret-square-right"></i>
+                </a>
+              </li>`;
+            }
 
             if (temp.res === "1") {
               portfolio_html_right += `
+                  <li>
+                    <a href="${temp.rlink}" target="_blank" class="underline">Responsive <i class="fas fa-tablet-alt"></i></a>
+                  </li>`;
+            }
+
+            if (temp.vue === "1") {
+              portfolio_html_right += `
                 <li>
-                  <a href="${temp.rlink}" target="_blank" class="underline">Responsive <i class="fas fa-tablet-alt"></i></a>
+                  <a href="${temp.vlink}" target="_blank" class="underline">Vue<i class="fab fa-vuejs"></i></a>
                 </li>`;
             }
 
             portfolio_html_right += `
-                <li>
-                  <a href="${temp.glink}" target="_blank" class="underline">Github <i class="fab fa-git-square"></i></a>
-                </li>
-                <li>
-                  <a href="${temp.olink}" target="_blank" class="underline">Original<i class="fas fa-external-link-alt"></i></a>
-                </li>
-              </ul>
+                  <li>
+                    <a href="${temp.glink}" target="_blank" class="underline">Github <i class="fab fa-git-square"></i></a>
+                  </li>`;
+
+            if (temp.clone === "1") {
+              portfolio_html_right += `
+                  <li>
+                    <a href="${temp.olink}" target="_blank" class="underline">Original <i class="fas fa-external-link-alt"></i></a>
+                  </li>`;
+            }
+
+            portfolio_html_right += `
+                </ul>
+              </div>
             </div>
-          </div>
-                    
-        <div class="line-s"></div>`;
+          
+            <div class="line-s"></div>`;
           }
         }
         showMore();
